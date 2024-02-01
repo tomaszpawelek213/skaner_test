@@ -1,0 +1,7 @@
+{
+  "name": "skaner_test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
