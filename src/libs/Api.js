@@ -15,7 +15,7 @@ const headers =  {headers: {'x-api-key': 'kXZTj0XXikySKforn3g8aZC2vfIieNSW7eEMqM
 
 
 
-
+// test połączenia funkcja wywołna z zakłatki home
 
 export async function connect(){
 

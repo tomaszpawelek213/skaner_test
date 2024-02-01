@@ -4,6 +4,7 @@
       <p style="margin-top: 100px;">Home Page</p>
       <ion-button style="width: 150px; margin-bottom: 60px; margin-top: 20px;"   @click="testcon">test połączenia</ion-button>
       <ion-button style="width: 150px; margin-bottom: 60px; margin-top: 20px;"   @click="getp">get parking</ion-button>
+      <ion-button style="width: 150px; margin-bottom: 60px; margin-top: 20px;"   @click="apiv2">test api</ion-button>
 
     
     <ion-list>
@@ -25,6 +26,7 @@
 import Layout from './Layout.vue';
 import {connect} from '../libs/Api';
 import {getcard,getparking} from '../libs/Api';
+import {login} from '../libs/AuthService';
 
 import { IonApp, IonRouterOutlet } from '@ionic/vue';
 import { ref } from 'vue';
@@ -51,6 +53,10 @@ const response = await getparking();
 console.log('response get parking',response);
 parkingArray.value = response.data; 
 console.log('parkingarray->:',parkingArray);
+}
+
+function apiv2() {
+  login();
 }
 
 
